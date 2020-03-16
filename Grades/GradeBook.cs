@@ -31,14 +31,14 @@ namespace Grades
         public string Name
         {
             get
-            {
+            { 
                 return _name;
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
-                { 
-                    
+                if (!string.IsNullOrEmpty(value))
+                {
+                    _name = value;
                 }           
             }
         }
